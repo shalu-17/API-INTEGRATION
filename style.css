@@ -1,0 +1,190 @@
+/* === Reset some default browser styles and set base box model === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Body and HTML base styles === */
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Background gradient from light to dark */
+  background: linear-gradient(135deg, #cfc7df, #0c0c0c, #1e3c72);
+  color: #dcd6d6;
+
+  /* Center all content horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Padding around the edges */
+  padding: 20px;
+
+  /* Smooth transition for background changes */
+  transition: background 0.5s ease;
+}
+
+/* === Main container styling === */
+.container {
+  background: rgba(0, 175, 228, 0.15); /* light transparent background */
+  padding: 30px 35px;
+  border-radius: 15px;
+  max-width: 550px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgb(16, 4, 4); /* shadow for depth */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+}
+
+/* === Main heading === */
+h1 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #f0f0f0;
+}
+
+/* === Form layout styling === */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* === Text input styling === */
+input[type="text"] {
+  padding: 12px 15px;
+  border: 2px solid #d1d9ff;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  flex-grow: 1;
+  min-width: 180px;
+  transition: border-color 0.3s ease;
+  background: rgb(255, 255, 255);
+  color: #000;
+}
+
+/* Placeholder text color */
+input[type="text"]::placeholder {
+  color: #000000;
+}
+
+/* Focus effect on input */
+input[type="text"]:focus {
+  border-color: #6fb1fc;
+  outline: none;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  background: rgb(255, 253, 253);
+  color: #000;
+}
+
+/* === Submit button styling === */
+button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #294387;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgb(1, 7, 20);
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #2e59e6;
+  box-shadow: 0 7px 20px rgb(0, 0, 0);
+}
+
+/* === Section for displaying previously searched cities === */
+#previousCities {
+  margin-top: 10px;
+  text-align: left;
+  max-height: 120px;
+  overflow-y: auto;
+  background: rgb(85, 98, 106);
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgb(0, 0, 0);
+}
+
+/* Heading inside previous cities box */
+#previousCities p {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+/* === Button style for each city === */
+.city-btn {
+  background: rgba(255, 255, 255, 0.4);
+  color: #222;
+  border: none;
+  padding: 6px 12px;
+  margin: 5px 6px 5px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for city buttons */
+.city-btn:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* === Weather result display box === */
+#weatherResult {
+  margin-top: 25px;
+  text-align: left;
+  color: #e0e0e0;
+  background: rgba(12, 111, 126, 0.93);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.997);
+  font-size: 1.2rem; /* readable font size */
+}
+
+/* City name heading in result */
+#weatherResult h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #161717;
+}
+
+/* Weather icon image */
+#weatherIcon {
+  display: block;
+  margin: 15px auto;
+  width: 110px;
+}
+
+/* Weather data paragraphs */
+#weatherResult p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* === Class to hide elements initially === */
+.hidden {
+  display: none;
+}
+
+/* === Error message styling === */
+.error {
+  margin-top: 15px;
+  color: #fa0e0efc;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: rgb(249, 249, 247);
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgb(0, 0, 0);
+  text-align: center;
+}

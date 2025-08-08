@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for proper encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Page Title -->
+  <title>Dynamic Weather App - Black Background</title>
+  
+  <!-- Linking external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Section for displaying previously searched cities -->
+  <div id="previousCities" class="hidden">
+    <p><strong>Previously searched cities:</strong></p>
+    <!-- City buttons will be dynamically added here using JavaScript -->
+  </div>
+
+  <!-- Main content container -->
+  <div class="container">
+    <!-- App Heading -->
+    <h1>Check Weather in Your City</h1>
+
+    <!-- Weather Search Form -->
+    <form id="weatherForm">
+      <!-- Input field for city name -->
+      <input type="text" id="cityInput" placeholder="Enter city name..." required />
+      
+      <!-- Button to submit the form -->
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <!-- Weather result display section (initially hidden) -->
+    <div id="weatherResult" class="hidden">
+      <!-- Display city name -->
+      <h2 id="cityName"></h2>
+      
+      <!-- Weather icon -->
+      <img id="weatherIcon" src="" alt="Weather Icon" />
+      
+      <!-- Weather description -->
+      <p id="description"></p>
+      
+      <!-- Temperature display -->
+      <p><strong>Temperature:</strong> <span id="temp"></span> °C</p>
+      
+      <!-- Humidity display -->
+      <p><strong>Humidity:</strong> <span id="humidity"></span> %</p>
+      
+      <!-- Wind speed display -->
+      <p><strong>Wind Speed:</strong> <span id="wind"></span> m/s</p>
+    </div>
+
+    <!-- Error message area (initially hidden) -->
+    <div id="error" class="error hidden"></div>
+  </div>
+
+  <!-- Linking external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
