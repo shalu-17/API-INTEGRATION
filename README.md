@@ -1,10 +1,5 @@
 # API-INTEGRATION
-COMPANY : CODTECH SOLUTIONS
-NAME: SHALU
-INTERN ID:CT06DG2964
-DOMAIN: FULL STACK DEVELOPER
-DURATION: 6 WEEKS
-MENTOR: NEELA SANTOSH
+
 # 🌦 Dynamic Weather App
 
 The **Dynamic Weather App** is a responsive, interactive, and beginner-friendly project that allows users to check real-time weather information for any city across the globe. This application is built using **HTML, CSS, and Vanilla JavaScript** and fetches live data from the **OpenWeatherMap API**.  
