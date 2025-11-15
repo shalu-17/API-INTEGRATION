@@ -55,7 +55,7 @@ Overall, the Dynamic Weather App is not just a small coding exercise; it’s a c
 ## 🛠 Technologies Used
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript 
 - OpenWeatherMap API
 - LocalStorage
 
