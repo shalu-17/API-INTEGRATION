@@ -2,7 +2,7 @@
 
 # 🌦 Dynamic Weather App
 
-The **Dynamic Weather App** is a responsive, interactive, and beginner-friendly project that allows users to check real-time weather information for any city across the globe. This application is built using **HTML, CSS, and Vanilla JavaScript** and fetches live data from the **OpenWeatherMap API**.  
+The **Dynamic Weather App** is a responsive, interactive, and beginner-friendly project that allows users to check real-time weather information for any city across the globe. This application is built using **HTML, CSS, and  JavaScript** and fetches live data from the **OpenWeatherMap API**.  
 
 It is designed to be simple enough for beginners to understand yet powerful enough to demonstrate real-world API integration and DOM manipulation techniques. The app has an intuitive interface, beautiful styling with gradient backgrounds, and a “previously searched cities” feature that makes it more user-friendly.
 
